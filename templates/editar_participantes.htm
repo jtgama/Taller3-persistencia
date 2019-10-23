@@ -1,0 +1,30 @@
+{% extends "estilos.htm" %}
+{% block body %}
+<div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card card-body">
+        <form action="/actualizar/{{ participantes.0}}" method="POST">
+            <div class="form-group">
+            <input type="text" class="form-control" name="cedula" placeholder="cedula" value="{{ participantes.1 }}">
+            </div>
+            <div class="form-group">
+            <input type="text" class="form-control" name="nombre" placeholder="nombre" value="{{ participantes.2 }}">
+            </div>
+            <div class="form-group">
+            <input type="text" class="form-control" name="actividad" placeholder="actividad" value="{{ participantes.3 }}">
+            </div>
+            <div class="form-group">
+            <input type="text" class="form-control" name="imagen" placeholder="imagen" value="{{ participantes.4 }}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="estrato" placeholder="estrato" value="{{ participantes.5 }}">
+        </div>
+          <button  type="submit" class="btn btn-primary btn-block" >
+           Actualizar
+          </button>
+        </div>
+    </form>
+  </div>
+</div>
+</div>
+      {% endblock %}

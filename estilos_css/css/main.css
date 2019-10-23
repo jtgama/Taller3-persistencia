@@ -1,0 +1,6 @@
+body {
+  background: rgb(139, 192, 241);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(143, 219, 233), rgb(147, 223, 216));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(0, 216, 224), rgb(129, 149, 185)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
